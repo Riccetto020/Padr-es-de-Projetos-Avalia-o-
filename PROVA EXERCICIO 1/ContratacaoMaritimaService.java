@@ -1,0 +1,6 @@
+public class ContratacaoMaritimaService extends ContratacaoService {
+    @Override
+    protected Frete criarFrete(double valorCarga) {
+        return new FreteMaritimo(valorCarga);
+    }
+}
